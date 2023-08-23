@@ -1,6 +1,7 @@
 //Imports necessary modules
 const express = require('express');
 const passport = require('../config/passport.js');
+const { checkReqUsername, checkReqPassword } = require('../middleware/checking-middleware.js')
 
 //Creates the router
 const authRouter = express.Router();
